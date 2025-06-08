@@ -8,9 +8,9 @@ import SecurityOutlinedIcon from "@mui/icons-material/SecurityOutlined";
 import Header from "../../components/Header";
 
 const Team = () => {
-    const theme = useTheme()
-    const colors = tokens(theme.palette.mode)
-    const columns = [
+  const theme = useTheme();
+  const colors = tokens(theme.palette.mode);
+  const columns = [
     { field: "id", headerName: "ID" },
     {
       field: "name",
@@ -51,8 +51,8 @@ const Team = () => {
               access === "admin"
                 ? colors.greenAccent[600]
                 : access === "manager"
-                ? colors.greenAccent[700]
-                : colors.greenAccent[700]
+                  ? colors.greenAccent[700]
+                  : colors.greenAccent[700]
             }
             borderRadius="4px"
           >
@@ -80,7 +80,7 @@ const Team = () => {
           },
           "& .MuiDataGrid-cell": {
             borderBottom: "none",
-            alignContent: "center"
+            alignContent: "center",
           },
           "& .name-column--cell": {
             color: colors.greenAccent[300],
@@ -105,6 +105,6 @@ const Team = () => {
       </Box>
     </Box>
   );
-}
+};
 
-export default Team
+export default Team;
