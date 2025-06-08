@@ -7,6 +7,8 @@ import Dashboard from "./scenes/dashboard";
 import Team from "./scenes/team";
 import Contacts from "./scenes/contacts/index.jsx";
 import Invoices from "./scenes/invoices/index.jsx";
+import Contacts from "./scenes/contacts";
+import Invoices from "./scenes/invoices";
 
 function App() {
   const [theme, colorMode] = useMode();
