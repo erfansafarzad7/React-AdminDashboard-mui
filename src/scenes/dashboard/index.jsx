@@ -10,7 +10,7 @@ import { tokens } from "../../theme";
 import Header from "../../components/Header";
 import LineChart from "../../components/LineChart";
 import GeographyChart from "../../components/GeographyChart";
-import BarChart from "../../components/BarChart";
+import BarChart from "../../components/Barchart";
 import StatBox from "../../components/StatBox";
 import ProgressCircle from "../../components/ProgressCircle";
 
