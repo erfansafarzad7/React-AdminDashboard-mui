@@ -116,7 +116,7 @@ const Sidebar = () => {
                 </Typography>
 
                 <Typography variant="h5" color={colors.greenAccent[500]}>
-                  VIP ADMIN
+                  FullStack Developer
                 </Typography>
               </Box>
             </Box>
