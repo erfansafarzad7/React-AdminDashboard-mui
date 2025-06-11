@@ -1,11 +1,11 @@
 import { Box, useTheme } from "@mui/material";
-import Header from "../../components/Header";
+import Header from "../components/Header.jsx";
 import Accordion from "@mui/material/Accordion";
 import AccordionSummary from "@mui/material/AccordionSummary";
 import AccordionDetails from "@mui/material/AccordionDetails";
 import Typography from "@mui/material/Typography";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
-import { tokens } from "../../theme";
+import { tokens } from "../theme.js";
 
 const FAQ = () => {
   const theme = useTheme();

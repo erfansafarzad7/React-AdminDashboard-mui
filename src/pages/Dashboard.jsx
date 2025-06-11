@@ -5,14 +5,14 @@ import PointOfSaleIcon from "@mui/icons-material/PointOfSale";
 import PersonAddIcon from "@mui/icons-material/PersonAdd";
 import TrafficIcon from "@mui/icons-material/Traffic";
 
-import { mockTransactions } from "../../data/mockData";
-import { tokens } from "../../theme";
-import Header from "../../components/Header";
-import LineChart from "../../components/LineChart";
-import GeographyChart from "../../components/GeographyChart";
-import BarChart from "../../components/Barchart";
-import StatBox from "../../components/StatBox";
-import ProgressCircle from "../../components/ProgressCircle";
+import { mockTransactions } from "../data/mockData.js";
+import { tokens } from "../theme.js";
+import Header from "../components/Header.jsx";
+import LineChart from "../components/LineChart.jsx";
+import GeographyChart from "../components/GeographyChart.jsx";
+import BarChart from "../components/Barchart.jsx";
+import StatBox from "../components/StatBox.jsx";
+import ProgressCircle from "../components/ProgressCircle.jsx";
 
 const Dashboard = () => {
   const theme = useTheme();
@@ -27,12 +27,12 @@ const Dashboard = () => {
           sx={{
             backgroundColor: colors.blueAccent[700],
             color: colors.grey[100],
-            fontSize:"14px",
+            fontSize: "14px",
             fontWeight: "bold",
-            padding: "10px 20px"
+            padding: "10px 20px",
           }}
         >
-          <DownloadOutlinedIcon sx={{mr: "10px"}}/>
+          <DownloadOutlinedIcon sx={{ mr: "10px" }} />
           Download Report
         </Button>
       </Box>
@@ -44,7 +44,6 @@ const Dashboard = () => {
         gridAutoRows="130px"
         gap="20px"
       >
-
         {/* ROW 1 */}
         <Box
           gridColumn="span 3"
@@ -60,7 +59,7 @@ const Dashboard = () => {
             increase="+14%"
             icon={
               <EmailIcon
-                sx={{color:colors.greenAccent[600], fontSize: "26px"}}
+                sx={{ color: colors.greenAccent[600], fontSize: "26px" }}
               />
             }
           />
@@ -129,7 +128,6 @@ const Dashboard = () => {
           gridRow="span 2"
           backgroundColor={colors.primary[400]}
         >
-
           <Box
             mt="25px"
             p="0 30px"
@@ -291,7 +289,6 @@ const Dashboard = () => {
             <GeographyChart isDashboard={true} />
           </Box>
         </Box>
-
       </Box>
     </Box>
   );
