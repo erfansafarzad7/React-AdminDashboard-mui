@@ -37,12 +37,16 @@ const Item = ({ title, to, icon, selected, setSelected }) => {
 const Sidebar = () => {
   const theme = useTheme();
   const colors = tokens(theme.palette.mode);
-  const [isCollapsed, setIsCollapsed] = useState(false);
+  const [isCollapsed, setIsCollapsed] = useState(true);
   const [selected, setSelected] = useState("dashboard");
 
   return (
     <Box
       sx={{
+        position: "fixed",
+        height: "100vh",
+        zIndex: 1200,
+        boxShadow: 7,
         "& .pro-sidebar-inner": {
           background: `${colors.primary[400]} !important`,
         },
